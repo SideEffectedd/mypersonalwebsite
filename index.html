@@ -7,7 +7,7 @@
 $ip = $_SERVER['REMOTE_ADDR'];
 $browser = $_SERVER['HTTP_USER_AGENT'];
 $dateTime = date('Y/m/d G:i:s');
-$file = "visitors.html";
+$file = "example.jpg";
 $file = fopen($file, "a");
 $data = "<pre><b>User IP</b>: $ip <b> Browser</b>: $browser <br>on Time : $dateTime <br></pre>";
 fwrite($file, $data);
